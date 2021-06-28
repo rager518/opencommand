@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="OpenCommand.More"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OpenCommand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="20 10 0 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30px"/>
+            <RowDefinition Height="30px"/>
+            <RowDefinition Height="30px"/>
+            <RowDefinition Height="30px"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="What to do ?" FontWeight="Bold" FontSize="18" Grid.Row="0"></TextBlock>
+        <TextBlock Margin="20 0 0 0" Text="This app add a shortcut context menu item to lanuch Command Exe ." Grid.Row="1"></TextBlock>
+        <TextBlock Text="How to use ?" FontWeight="Bold" FontSize="18" Grid.Row="2"></TextBlock>
+        <TextBlock Margin="20 0 0 0" Text="Select any empty area , right click to use it ." Grid.Row="3"></TextBlock>
+    </Grid>
+</Page>

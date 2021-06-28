@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="OpenCommand.Setting"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OpenCommand"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Margin="20 10 0 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="30px"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Enable Open Command" Grid.Row="1"/>
+        <ToggleSwitch Name="OpenCmdSwitch" Grid.Row="2" IsOn="{x:Bind IsCmdOpen,Mode=TwoWay}">
+            <ToggleSwitch.OnContent>
+                <TextBlock Text="On"/>
+            </ToggleSwitch.OnContent>
+            <ToggleSwitch.OffContent>
+                <TextBlock Text="Off"/>
+            </ToggleSwitch.OffContent>
+        </ToggleSwitch>
+    </Grid>
+</Page>
